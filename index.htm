@@ -4,15 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>大方茶葉</title>
-    <script>
-        function go(){
-            location.href='death.htm';
-        }
-    </script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>大方茶葉</h1>
-    <p>...........</p>
-    <button onclick="go()">瞭解更多</button>
+    <div class="head" id="head">
+        <h1><a href="index.htm">大方茶葉</a></h1>
+        <button id="mebutton" onclick="show()">選單</button>
+    </div>
+    <hr>
+    <div class="menu" id="menu">
+        <h2>內部連結</h2>
+        <li><a href="index.htm">首頁</a></li>
+        <li><a href="about.htm">關於我們</a></li>
+        <li><a href="store.htm">店面分佈</a></li>
+        <li><a href="in.htm">版本資訊</a></li>
+    </div>
+    <div class="body">
+        <div class="iv">
+            <img src="index.gif" alt="">
+        </div>
+        <div class="d">
+            <h2>優良傳統</h2>
+            <p>三代種茶，七十年</p>
+            <img src="id1.png" alt="" style="height: 350px;">
+        </div>
+        <div class="d">
+            <h2>良好品質</h2>
+            <p>用心做茶，賣好茶</p>
+            <img src="id2.jpg" alt="" style="height: 350px;">
+        </div>
+        <div class="d">
+            <h2>品質優良，客戶安心</h2>
+            <img src="id3.jpeg" alt="" style="height: 350px;">
+        </div>
+    </div>
+    <hr>
+    <div class="footer">
+        <p>&copy;大方茶葉 竹山鎮集山路三段461-3 <strong>謝絕推銷</strong> 許元洧製作</p>
+        <button id="mebutton" onclick="show()">選單</button>
+    </div>
+
+    <script>
+        function show(){
+            document.getElementById('menu').style.display='block';
+            location.href='#head';
+        }
+        function close(){
+            document.getElementById('menu').style.display='none';
+        }
+        window.onload=function(){
+            close();
+        };
+    </script>    
 </body>
 </html>

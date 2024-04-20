@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大方茶葉｜版本資訊</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="head" id="head">
+        <h1><a href="index.htm">大方茶葉</a></h1>
+        <button id="mebutton" onclick="show()">選單</button>
+    </div>
+    <hr>
+    <div class="menu" id="menu">
+        <h2>內部連結</h2>
+        <li><a href="index.htm">首頁</a></li>
+        <li><a href="about.htm">關於我們</a></li>
+        <li><a href="store.htm">店面分佈</a></li>
+        <li><a href="in.htm">版本資訊</a></li>
+    </div>
+    <div class="body">
+        <div class="d">
+            <h2>網站版本</h2>
+            <li>支援平台：手機(ios、android)、電腦(windows、macos等)、平板電腦(ipad等)</li>
+            <li>初版時間：2024/4/20</li>
+            <li>&copy;版權聲明：大方茶葉 負責人 楊曉雯 網頁製作人 許元洧</li>
+            <li>網頁問題：<p id="out" style="display: inline;"></p>(若網頁偵錯系統偵測出錯誤，將會在此顯示錯誤代碼)</li>
+        </div>
+    </div>
+    <hr>
+    <div class="footer">
+        <p>&copy;大方茶葉 竹山鎮集山路三段461-3 <strong>謝絕推銷</strong> 許元洧製作</p>
+        <button id="mebutton" onclick="show()">選單</button>
+    </div>
+
+    <script>
+        function show(){
+            document.getElementById('menu').style.display='block';
+            location.href='#head';
+        }
+        function close(){
+            document.getElementById('menu').style.display='none';
+        }
+        window.onload=function(){
+            close();
+        };
+    </script>    
+</body>
+</html>

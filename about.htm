@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大方茶葉|關於我們</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="head" id="head">
+        <h1><a href="index.htm">大方茶葉</a></h1>
+        <button id="mebutton" onclick="show()">選單</button>
+    </div>
+    <hr>
+    <div class="menu" id="menu">
+        <h2>內部連結</h2>
+        <li><a href="index.htm">首頁</a></li>
+        <li><a href="about.htm">關於我們</a></li>
+        <li><a href="store.htm">店面分佈</a></li>
+        <li><a href="in.htm">版本資訊</a></li>
+    </div>
+    <div class="body">
+        <div class="d">
+            <h2>聯絡方式</h2>
+            <li>大方竹山店（市內電話）：(049) 2652656</li>
+            <li>楊曉雯：0937-780661</li>
+            <li>楊育華：0918-000530</li>
+        </div>
+        <div class="d">
+            <h2>地址</h2>
+            <li>竹山鎮集山路三段461-3</li>
+        </div>
+    </div>
+    <hr>
+    <div class="footer">
+        <p>&copy;大方茶葉 竹山鎮集山路三段461-3 <strong>謝絕推銷</strong> 許元洧製作</p>
+        <button id="mebutton" onclick="show()">選單</button>
+    </div>
+
+    <script>
+        function show(){
+            document.getElementById('menu').style.display='block';
+            location.href='#head';
+        }
+        function close(){
+            document.getElementById('menu').style.display='none';
+        }
+        window.onload=function(){
+            close();
+        };
+    </script>    
+</body>
+</html>
