@@ -3,58 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大方茶葉</title>
-    <link rel="stylesheet" href="index.css">
+    <title>大方茶葉 dafun tea</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="head" id="head">
-        <h1><a href="index.htm">大方茶葉</a></h1>
-        <button id="mebutton" onclick="show()">選單</button>
+    <div class="d0"><h1>大方茶葉</h1></div>
+    <div class="jump" id="jump">
+        <h1>各式茶葉，批發促銷</h1><button class="x" onclick="jumpc()">X</button>
+        <a href="https://shopee.tw/yun685700">前去蝦皮</a>
     </div>
-    <hr>
-    <div class="menu" id="menu">
-        <h2>內部連結</h2>
-        <li><a href="index.htm">首頁</a></li>
-        <li><a href="about.htm">關於我們</a></li>
-        <li><a href="store.htm">店面分佈</a></li>
-        <li><a href="in.htm">版本資訊</a></li>
+    <div class="d1">
+        <h2>三代種茶，七十年</h2>
+        <p>優良傳統，延續燈火</p>
     </div>
-    <div class="body">
-        <div class="iv">
-            <img src="index.gif" alt="">
-        </div>
-        <div class="d">
-            <h2>優良傳統</h2>
-            <p>三代種茶，七十年</p>
-            <img src="id1.png" alt="" style="height: 350px;">
-        </div>
-        <div class="d">
-            <h2>良好品質</h2>
-            <p>用心做茶，賣好茶</p>
-            <img src="id2.jpg" alt="" style="height: 350px;">
-        </div>
-        <div class="d">
-            <h2>品質優良，客戶安心</h2>
-            <img src="id3.jpeg" alt="" style="height: 350px;">
-        </div>
+    <div class="d2">
+        <h2>優良產地，茶葉批發零售</h2>
+        <p>來自各式知名茶葉產區</p>
+        <button onclick="d21o()">了解茶葉產區</button>
     </div>
-    <hr>
+    <div class="d21" id="d21">
+        <button class="x" onclick="d21c()">X</button>
+        <p>在台灣，知名的茶葉產區有阿里山、杉林溪、梨山等。而依據不同的山頭和海拔高低的不同，茶的特色與滋味也會有所不同。就像阿里山的海拔高度為1200m，杉林溪的海拔高度為1600m，因地區、氣候特色及海拔高度的不同，差的滋味也有所不同。來到大方，有各式的台灣高山茶供您挑選。</p>
+    </div>
+    <div class="d3">
+        <h2>各式促銷通路</h2>
+        <button onclick="d31o()">實體店面</button>
+        <button onclick="d32o()">線上商店</button>
+    </div>
+    <div class="d31" id="d31">
+        <button class="x" onclick="d31c()">X</button>
+        <h2>大方的實體店面有兩家</h2>
+        <li><h3>大方竹山總店</h3></li>
+        <p>地址：南投縣竹山鎮集山路三段461-3</p>
+        <p>聯絡電話：(049)2652656、0937-780661</p>
+        <li><h3>大方紫南宮分店</h3></li>
+        <p>地址：google查詢竹山紫南宮，到達後，往合庫ＡＴＭ移動，對面即大方紫南宮分店</p>
+        <p>聯絡電話：0918-000530</p>
+    </div>
+    <div class="d32" id="d32">
+        <button class="x" onclick="d32c()">X</button>
+        <h2>大方在蝦皮平台上有一家線上商店</h2>
+        <a href="https://shopee.tw/yun685700">前往看看</a>
+    </div>
+    <div class="d4">
+        <h2>聯絡我們</h2>
+        <button onclick="d41o()">大方茶葉竹山總店</button>
+        <button onclick="d42o()">大方茶葉分店</button>
+    </div>
+    <div class="d41" id="d41">
+        <button class="x" onclick="d41c()">X</button>
+        <h2>大方茶葉竹山總店即大方茶葉</h2>
+        <p>負責人：楊曉雯 聯絡電話：0937-780661</p>
+        <p>市內電話：(049)2652656</p>
+    </div>
+    <div class="d42" id="d42">
+        <button class="x" onclick="d42c()">X</button>
+        <h2>大方茶葉竹山總店</h2>
+        <p>負責人：楊育華 聯絡電話：0918-000530</p>
+    </div>
     <div class="footer">
-        <p>&copy;大方茶葉 竹山鎮集山路三段461-3 <strong>謝絕推銷</strong> 許元洧製作</p>
-        <button id="mebutton" onclick="show()">選單</button>
+        <p>&copy;2024大方茶葉 許元洧製作</p>
     </div>
 
     <script>
-        function show(){
-            document.getElementById('menu').style.display='block';
-            location.href='#head';
+        function jumpc(){
+            document.getElementById('jump').style.display='none';
         }
-        function close(){
-            document.getElementById('menu').style.display='none';
+        function d21o(){
+            document.getElementById('d21').style.display='block';
+        }
+        function d21c(){
+            document.getElementById('d21').style.display='none';
+        }
+        function d31o(){
+            document.getElementById('d31').style.display='block';
+        }
+        function d31c(){
+            document.getElementById('d31').style.display='none';
+        }
+        function d32o(){
+            document.getElementById('d32').style.display='block';
+        }
+        function d32c(){
+            document.getElementById('d32').style.display='none';
+        }
+        function d41o(){
+            document.getElementById('d41').style.display='block';
+        }
+        function d41c(){
+            document.getElementById('d41').style.display='none';
+        }
+        function d42o(){
+            document.getElementById('d42').style.display='block';
+        }
+        function d42c(){
+            document.getElementById('d42').style.display='none';
         }
         window.onload=function(){
-            close();
-        };
-    </script>    
+            d21c();
+            d31c();
+            d32c();
+            d41c();
+            d42c();
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,137 @@
+.d0 h1{
+    display: none;
+}
+.d0{
+    height: 350px;
+    background-image: url('dafun.jpeg');
+    background-size: cover;
+}
+.jump h1{
+    display: inline;
+}
+.jump a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+.jump a:hover{
+    color: blue;
+    background: greenyellow;
+}
+.x{
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50px;
+    height: 24px;
+    width: 24px;
+    margin: 15px;
+}
+.x:hover{
+    background-color: greenyellow;
+}
+.jump{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+    position: fixed;
+    background-color: white; 
+}
+body{
+    width: auto;
+}
+.d1{
+    background-color: rgb(227, 227, 112);
+    padding: 15px;
+    text-align: center;
+}
+.d2{
+    background-color: rgb(177, 212, 201);
+    padding: 15px;
+    text-align: center;
+}
+.d2 button{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+.d2 button:hover{
+    background-color: rgb(177, 212, 201);
+}
+.d21{
+    background-color: azure;
+    text-align: center;
+    padding: 15px;
+}
+.d3{
+    padding: 15px;
+    background-color: beige;
+    text-align: center;
+}
+.d3 button{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+.d3 button:hover{
+    background-color: beige;
+}
+.d31{
+    text-align: center;
+    padding: 15px;
+}
+.d31 li{
+    display: inline;
+}
+.d32{
+    text-align: center;
+    padding: 15px;
+}
+.d32 a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+.d32 a:hover{
+    color: blue;
+    background: greenyellow;
+}
+.d4{
+    text-align: center;
+    padding: 15px;
+    background-color: blanchedalmond;
+}
+.d4 button{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+.d4:hover{
+    background-color: blanchedalmond;
+}
+.d41{
+    text-align: center;
+    padding: 15px;
+}
+.d42{
+    text-align: center;
+    padding: 15px;
+}
+.footer{
+    text-align: center;
+    background-color: darkgray;
+    padding: 15px;
+}
