@@ -46,14 +46,61 @@
         .h1s{
             font-size: 12px;
         }
+        .s1{
+            color: green;
+        }
+        .s1 a{
+            color: green;
+        }
+        #openPopupBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+        .s1 a{
+            text-decoration: underline;
+        }
+        .popup-content img{
+            height: 200px;
+        }
     </style>
 </head>
 <body>
     <div class="head">
-        <img src="dafun.jpeg" alt="">
+        <img src="紫南宮分店1.jpg" alt="">
     </div>
     <div class="body">
-        <h1>大方茶葉<span class="h1s">首頁</span></h1>
+        <h1>大方茶葉<span class="h1s">紫南宮分店</span></h1>
         <details>
             <summary title="按我打開選單">&#x2261;</summary>
             <div id="menu">
@@ -66,8 +113,15 @@
         </details>
         <h2>精選茶品</h2>
         <p>
-            大方茶葉店擁有多種精選茶品，從烏龍茶、綠茶到紅茶，每一款茶葉都經過嚴格篩選和細心製作。我們的茶葉採用傳統手工製作工藝，確保每一片茶葉都能保留其天然的香氣和風味。
+            大方茶葉店擁有多種精選茶品，從烏龍茶、綠茶到紅茶，每一款茶葉都經過嚴格篩選和細心製作。我們的茶葉採用傳統手工製作工藝，確保每一片茶葉都能保留其天然的香氣和風味。<br><span class="s1"><a onclick="opage()" title="深入瞭解" id="openPopupBtn">並且在此店面加入冷飲系列元素。</a></span>
         </p>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span id="closePopupBtn" class="close-btn" onclick="cpage()">&times;</span>
+                <h2>加入的冷飲有：</h2>
+                <img src="紫南宮分店2.jpg" alt="">
+            </div>
+        </div>
         <h2>品質保證</h2>
         <p>
             大方茶葉店以品質為核心，我們的每一款茶葉都經過嚴格的品質檢驗，從採摘到包裝，每一個環節都精益求精。我們致力於為顧客提供最佳的飲茶體驗，讓每一口茶都能感受到竹山的自然風味。
@@ -83,13 +137,22 @@
         <div class="space"></div>
         <p><strong>大方茶葉店期待您的光臨，讓我們一起品味來自竹山的珍貴茶香。</strong></p>
         <div class="space"></div>
-        <li><strong>地址：</strong>南投縣竹山鎮集山路三段461-3號</li>
-        <li><strong>電話：</strong>(049) 2652656</li>
+        <li><strong>地址：</strong>google查詢竹山紫南宮，到達後，往合庫ＡＴＭ移動，對面即大方紫南宮分店</li>
+        <li><strong>電話：</strong>0918-000530</li>
         <li><strong>更多：</strong><a href="#menu">按我</a></li>
     </div>
     <div class="footer">
         <div class="gif"><img src="index.gif" alt=""></div>
         <p>&copy;許元洧製作</p>
     </div>
+
+    <script>
+        function opage(){
+            document.getElementById('popup').style.display='block';
+        }
+        function cpage(){
+            document.getElementById('popup').style.display='none';
+        }
+    </script>
 </body>
 </html>
