@@ -15,7 +15,7 @@ a:hover{
     background-color: white;
 }
 img{
-    height: 350px;
+    height: 300px;
 }
 .d11,.d12{
     text-align: center;
@@ -42,12 +42,6 @@ img{
     overflow-wrap: break-word;
     word-break: break-all;
     white-space: normal;
-}
-.d14 iframe{
-    margin-left: 150px;
-}
-.d14 a{
-    margin-left: 300px;
 }
 .footer{
     text-align: center;
