@@ -77,3 +77,9 @@ body{
     text-decoration: underline;
     color: blue;
 }
+/* 響應式設計 */
+@media screen {
+    iframe{
+        width: 75%;
+    }
+}
