@@ -1,85 +1,81 @@
+.header{
+    border-bottom: 0.5px solid black;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    background-color: white;
+}
+.body{
+    background-image: url('1.jpg');
+    background-size: cover;
+}
+.about,.post,.footer{
+    background-color: white;
+}
+.about{
+    text-align: center;
+}
+.about img{
+    height: 350px;
+}
+.d13{
+    text-align: left;
+    font-size: 14px;
+    margin: 15px;
+    width: 100%;
+}
+.d13 pre{
+   white-space: pre-wrap;
+}
+.d14 h2{
+    text-align: left;
+}
+.d14{
+    text-align: left;
+    margin: 15px;
+    margin-left: 40%;
+}
+.post iframe{
+    width: 70%;
+    margin-left: 15%;
+}
+.post h2{
+    text-align: center;
+}
 a{
     text-decoration: none;
     color: black;
 }
 a:hover{
     text-decoration: underline;
-    color: blue;
-}
-.header{
-    text-align: center;
-    border: 0.5px solid black;
-    border-radius: 15px;
-    padding: 15px;
-    margin: 15px;
-    background-color: white;
-}
-img{
-    height: 300px;
-}
-.d11,.d12{
-    text-align: center;
-    border: 0.5px solid black;
-    background-color: white;
-    padding: 50px;
-    margin: 15px;
-    border-radius: 15px;
-}
-.d13,.d14,.post,.main{
-    border: 0.5px solid black;
-    background-color: white;
-    padding: 50px;
-    margin: 15px;
-    border-radius: 15px;
-    font-size: 14px;
-}
-.d13 pre{
-    overflow-wrap: break-word;
-    word-break: break-all;
-    white-space: normal;
-}
-.d14 pre{
-    overflow-wrap: break-word;
-    word-break: break-all;
-    white-space: normal;
-}
-.footer{
-    text-align: center;
-    border-top: 5px solid black;
-    padding: 15px;
-    margin: 15px;
-    background-color: white;
-}
-body{
-    background-image: url(1.jpg);
-    background-size: cover;
-}
-.main{
-    height: auto;
-    text-align: center;
-    font-size: 18px;
-}
-.main details{
+    color:blue;
     cursor: pointer;
-}
-.main details:hover{
-    text-decoration: underline;
-    color: blue;
-}
-.space{
-    height: 300px;
-}
-.header a{
-    margin-right: 5px;
 }
 .gocw:hover{
-    cursor: pointer;
     text-decoration: underline;
     color: blue;
+    cursor: pointer;
 }
-/* 響應式設計 */
+.d13 button{
+    text-decoration: none;
+    background-color: white;
+    border: 0.5px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 28px;
+    margin-left: 40%;
+}
+.d13 button:hover{
+    background-color: rgb(58, 204, 197);
+    color: white;
+    cursor: pointer;
+}
+.main img{
+    width: 50%;
+}
+
 @media screen {
-    iframe{
-        width: 75%;
+    .d14{
+        margin-left: 30%;
     }
 }
