@@ -3,29 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>大方茶葉 Dafun</title>
-    <link rel="stylesheet" href="index.css">
+    <title>大方茶葉 華庭茶葉有限公司</title>
+    <style>
+        img{
+            width: 50%;
+        }
+        body{
+            text-align: center;
+        }
+        .button{
+            text-align: center;
+        }
+        .button button{
+            text-decoration: none;
+            border: 1px solid black;
+            background-color: white;
+            width: 150px;
+            cursor: pointer;
+        }
+        #a{
+            background-color: aqua;
+        }
+        textarea{
+            width: 50%;
+            height: 350px;
+            font-size: 14px;
+        }
+        .place,.pm,.p,.ms{
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <div class="header">
-        <h1>大方茶葉<p style="display: inline; font-size: 16px;" class="gocw" onclick="location.href='https://m0902290661.github.io/Huating-Tea/';">華庭茶葉有限公司</p></h1>
-        <a href="商品大綱.htm" title="點擊前往">商品大綱</a>
-        <a href="enter.htm">資訊網</a>
+    <h1>大方茶葉 華庭茶葉有限公司</h1><br>
+    <div class="button">
+        <button id="a" onclick="cad()">簡介</button>
+        <button id="pl" onclick="cpld()">店面分佈</button>
+        <button id="p" onclick="cpd()">公告</button>
+        <button id="pm" onclick="cpmd()">商品大綱</button>
+        <button id="ms" onclick="cmsd()">員工登入</button>
     </div>
-    <div class="body">
-        <div class="about">
-            <div class="d11">
-                <h2>大方茶葉 專業賣茶 三代種茶 七十年</h2>
-                <img src="image.png" alt="">
-            </div>
-            <div class="d12">
-                <h2>大方注重的是：茶葉的品質</h2>
+    <div class="main">
+        <div class="about" id="ad">
+            <h2>大方茶葉 專業賣茶 三代種茶 七十年</h2>
+            <img src="image.png" alt="">
+            <h2>大方注重的是：茶葉的品質</h2>
                 <p>自家種茶，茶農直營，最有保握品質和美味。</p>
                 <img src="image copy.png" alt="">
-            </div>
-            <div class="d13">
-                <pre>
+            <br><textarea>
 大方茶葉：優雅風華，香氣撲鼻
 歡迎來到竹山鎮，這裡不僅風景宜人，更有著一家獨特而受歡迎的茶葉店鋪——大方茶葉。大方茶葉自成立以來，一直以其卓越品質、獨特風味和對品牌的承諾而聞名，為茶葉愛好者提供了一場無法忘懷的品茗之旅。
 悠久歷史，優質茶源
@@ -37,41 +62,146 @@
 店鋪資訊
 大方茶葉位於竹山鎮，一座宛如茶葉仙境的店鋪歡迎您的光臨。無論是品茶還是挑選禮品，我們的熱情團隊將竭誠為您服務，讓您感受到最細緻的茶葉文化。
 
-大方茶葉，不僅是一家茶行，更是一種生活態度。讓我們一起沉浸在這片茶香之中，感受大自然的馈赠，品味生活的美好。                    
-                </pre>
-                <button onclick="location.href='商品大綱.htm#teatalk'">茶種介紹</button>
-            </div>
-            <div class="d14" id="d14">
-                <h2>店面分佈</h2>
-                <pre>
-大方竹山總店
-營業時間 : am8:00-pm10:00 
-室內電話: (049) 2652656
-負責人: 楊曉雯 小姐
-負責人電話: 0937-780661
-                </pre>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3651.61538766722!2d120.694054!3d23.761091!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ecd96cf9de589%3A0xc065d546990739c1!2zNTU35Y-w54Gj5Y2X5oqV57ij56u55bGx6Y6u6ZuG5bGx6Lev5LiJ5q61NDYxLTPomZ8!5e0!3m2!1szh-TW!2sus!4v1723907166475!5m2!1szh-TW!2sus" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <pre>
-大方紫南宮分店
-營業時間: am9:00-pm5:00 
-室內電話: 無
-負責人: 楊育華 小姐
-負責人電話: 0918-000530
-                </pre>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3650.04086085364!2d120.72253200000002!3d23.817146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34692d51f6246d03%3A0x6d0f1d8a5e2c0a2d!2zNTU35Y-w54Gj5Y2X5oqV57ij56u55bGx6Y6u5aSn5YWs6KGXNDDomZ8!5e0!3m2!1szh-TW!2sus!4v1723907227756!5m2!1szh-TW!2sus" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <pre>
-大方網路商城(蝦皮)
-                </pre>
-                <a href="https://shopee.tw/yun685700?is_from_login=true">前往</a>
-            </div>
+大方茶葉，不僅是一家茶行，更是一種生活態度。讓我們一起沉浸在這片茶香之中，感受大自然的馈赠，品味生活的美好。                 
+            </textarea>
         </div>
-        <div class="post">
+        <div class="place" id="pld">
+            <h2>店面分佈</h2>
+            <li>大方竹山總店</li>
+            <p>營業時間 : am8:00-pm10:00 <br> 
+            室內電話: (049) 2652656 <br>
+            負責人: 楊曉雯 小姐 <br>
+            負責人電話: 0937-780661</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3651.61538766722!2d120.694054!3d23.761091!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ecd96cf9de589%3A0xc065d546990739c1!2zNTU35Y-w54Gj5Y2X5oqV57ij56u55bGx6Y6u6ZuG5bGx6Lev5LiJ5q61NDYxLTPomZ8!5e0!3m2!1szh-TW!2sus!4v1723907166475!5m2!1szh-TW!2sus" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <li>大方紫南宮分店</li>
+            <p>營業時間: am9:00-pm5:00  <br>
+                室內電話: 無 <br>
+                負責人: 楊育華 小姐 <br>
+            負責人電話: 0918-000530</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3650.04086085364!2d120.72253200000002!3d23.817146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34692d51f6246d03%3A0x6d0f1d8a5e2c0a2d!2zNTU35Y-w54Gj5Y2X5oqV57ij56u55bGx6Y6u5aSn5YWs6KGXNDDomZ8!5e0!3m2!1szh-TW!2sus!4v1723907227756!5m2!1szh-TW!2sus" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <li>大方網路商城(蝦皮)</li>
+            <a href="https://shopee.tw/yun685700?is_from_login=true">前往</a>
+        </div>
+        <div class="p" id="pd">
             <h2>公告</h2>
-            <iframe src="https://docs.google.com/spreadsheets/d/1tLu6qadFtE0yLHa3UGzQKZaZkjQ0sHDGP7tQY-PTl_8/pubhtml" frameborder="0.5px" height="500px" width="75%"></iframe>
+            <li>本店於2024/1/1起，不對外提供代客包裝服務，造成不便請見諒</li>
+        </div>
+        <div class="pm" id="pmd">
+            <h2>商品大綱</h2>
+            <li>紅茶（80%-90%發酵茶）
+                紅茶在六大茶系當中是屬於近全發酵的茶款，其製茶流程從採茶後進行萎凋，後續進行發酵工藝至全發酵狀態
+                常見的蜜香紅茶、紅玉、紅韻、阿薩姆紅茶、錫蘭紅茶、大吉嶺紅茶等經典茶款皆是此茶系的茶款</li>
+            <li>綠茶（不發酵茶）
+                綠茶在六大茶系當中是屬於不發酵的茶款，其製茶流程採茶後立刻進行殺青破壞酵素
+                台灣經典的綠茶款如三峽碧螺春、龍井即為綠茶系茶款</li>
+            <li>黃茶（10%-20%發酵茶）
+                黃茶在六大茶系當中是屬於微發酵的茶款，其製茶流程與綠茶相同
+                但多經過悶堆渥黃，而產生了發酵作業</li>
+            <li>青茶（30%-60%發酵茶）
+                青茶又被大家廣稱作烏龍茶，也是最常見的一款茶，在六大茶系當中是屬於部分發酵的茶款，發酵程度是介於綠茶與紅茶之間
+                擁有了綠茶的清爽鮮，又擁有紅茶的甘甜口感。(烏龍茶咖啡因真的比較多？臺灣茶咖啡因比較大公開)
+                台灣常見如：凍頂烏龍、鐵觀音、包種茶、阿里山烏龍、梨山烏龍、東方美人、貴妃茶等都是青茶系列的茶款</li>
+            <li>白茶（20%～30%發酵茶）
+                在製茶過程中不殺青也不去揉捻，讓茶葉萎凋時產生些許的微發酵
+                對茶葉細胞破壞也較少些
+                台灣除了「白牡丹」外，也有許多以青心烏龍種製成的白茶，簡稱為「台灣白茶」</li>
+            <li>黑茶（後發酵茶）
+                黑茶在六大茶系中，屬於100%發酵的茶款，在茶葉進行加工後堆積發酵的時間較長，讓茶葉呈現為暗褐色的樣態
+                常見茶款如：「普洱茶」</li>
+        </div>
+        <div class="ms" id="msd">
+            <h2>員工登入</h2>
+            <input  id="ip" type="password" placeholder="請輸入密碼"><button onclick="singin()">送出</button><br>
+            <textarea name="" id="out">請登入</textarea>
         </div>
     </div>
-    <div class="footer">
-        <p>&copy;本站由許元洧設計</p>
-    </div>
+    <p>&copy;大方茶葉 華庭茶葉有限公司 版權所有 2024 本網站由 許元洧 進行維護與更新</p>
+
+    <script>
+        //button
+        const a = document.getElementById('a');
+        const pl = document.getElementById('pl');
+        const p = document.getElementById('p');
+        const pm = document.getElementById('pm');
+        const ms = document.getElementById('ms');
+        //div
+        const ad = document.getElementById('ad');
+        const pld = document.getElementById('pld');
+        const pd = document.getElementById('pd');
+        const pmd = document.getElementById('pmd');
+        const msd = document.getElementById('msd');
+        //function
+        function cad(){
+            ad.style.display='block';
+            pld.style.display='none';
+            pd.style.display='none';
+            pmd.style.display='none';
+            msd.style.display='none';
+            a.style.backgroundColor='aqua';
+            pl.style.backgroundColor='white';
+            p.style.backgroundColor='white';
+            pm.style.backgroundColor='white';
+            ms.style.backgroundColor='white';
+        }
+        function cpld(){
+            pld.style.display='block';
+            ad.style.display='none';
+            pd.style.display='none';
+            pmd.style.display='none';
+            msd.style.display='none';
+            pl.style.backgroundColor='aqua';
+            a.style.backgroundColor='white';
+            p.style.backgroundColor='white';
+            pm.style.backgroundColor='white';
+            ms.style.backgroundColor='white';
+        }
+        function cpd(){
+            pd.style.display='block';
+            ad.style.display='none';
+            pld.style.display='none';
+            pmd.style.display='none';
+            msd.style.display='none';
+            p.style.backgroundColor='aqua';
+            a.style.backgroundColor='white';
+            pl.style.backgroundColor='white';
+            pm.style.backgroundColor='white';
+            ms.style.backgroundColor='white';
+        }
+        function cpmd(){
+            pmd.style.display='block';
+            ad.style.display='none';
+            pd.style.display='none';
+            pld.style.display='none';
+            msd.style.display='none';
+            pm.style.backgroundColor='aqua';
+            a.style.backgroundColor='white';
+            p.style.backgroundColor='white';
+            pl.style.backgroundColor='white';
+            ms.style.backgroundColor='white';
+        }
+        function cmsd(){
+            msd.style.display='block';
+            ad.style.display='none';
+            pd.style.display='none';
+            pmd.style.display='none';
+            pld.style.display='none';
+            ms.style.backgroundColor='aqua';
+            a.style.backgroundColor='white';
+            p.style.backgroundColor='white';
+            pm.style.backgroundColor='white';
+            pl.style.backgroundColor='white';
+        }
+        //singin
+        function singin(){
+            const password = '2652656';
+            const ip = document.getElementById('ip').value;
+            if(password===ip){
+                location.href='https://docs.google.com/spreadsheets/d/e/2PACX-1vShv7aE7V0sxZBgvTPEceiEPcn6wh97L_WLAnhgR-pyUxXV0jo2Smo82rbNZ1oy2zRtY4ePmCExUfdz/pubhtml';
+            }
+            else{
+                document.getElementById('out').innerHTML='登入失敗，請重試。'
+            }
+        }
+    </script>
 </body>
 </html>
