@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dafun</title>
+    <style>
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dafun financial system</h1>
+    <input type="text" placeholder="Please enter the year and month to search financial statements:" style="width: 500px;" id="input"><br>
+    <button onclick="s()">enter</button>
+    <p>The query format is as follows: <br>
+        Year-Month Example 2024-9
+    </p>
+    <div class="2024-7" id="2024-7">
+        <img src="2024-7.png" alt="">
+    </div>
+    <div class="2024-8" id="2024-8">
+        <img src="2024-8.png" alt="">
+    </div>
+    <div class="2024-9" id="2024-9">
+        <img src="2024-9.png" alt="">
+    </div>
+
+    <script>
+        function s(){
+            const month = document.getElementById('input').value;
+            location.href='#'+month
+        }
+    </script>
+</body>
+</html>
